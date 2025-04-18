@@ -1,0 +1,105 @@
+2025-03-21 21:23:44,879 [INFO] 
+#### CONFIG ####
+seed: 3407
+batch_size: 30
+test_batch_size: 10
+modality: rgb
+max_step: 5000
+ckpt_file: None
+weight_decay: 0.01
+learning_rate: 5e-05
+adam_epsilon: 1e-06
+save_score: 80
+amp: True
+lr_scheduler: constant
+eval_metric: AUC@ROC
+optuna: True
+alpha: 0.5
+gamma: 2.5
+threshold: 0.4
+arch: [2, 2, 4]
+scale_factor: 1
+max_seq_len: 256
+n_mha_win_size: 8
+n_embd: 512
+n_head: 4
+window_size: 16
+se_ratio: 4
+dropout: 0.15000000000000002
+zip_feats: data/ucfcrime_i3d_roc_ng_w16_s16.zip
+pseudo_label: data/UCF_frame_pseudo_label.npy
+num_workers: 4
+tencrop: True
+device: cuda
+dataset_name: ucfcrime
+save_path: ./save/train_0321_212344
+
+2025-03-21 21:24:12,670 [INFO] Step 100 | NCrop: AUC@PR:24.47  AUC@ROC:54.43  ACC:0.0  FAR:nan | Loss/PSE:0.9417 | Loss/Cls:1.748 | Loss/Tri:0.532 | Loss/Total:2.731 | Saved
+2025-03-21 21:24:31,879 [INFO] Step 200 | NCrop: AUC@PR:27.7  AUC@ROC:58.52  ACC:100.0  FAR:nan | Loss/PSE:0.5893 | Loss/Cls:1.296 | Loss/Tri:0.5855 | Loss/Total:2.329 | Saved
+2025-03-21 21:24:53,962 [INFO] Step 300 | NCrop: AUC@PR:38.73  AUC@ROC:67.73  ACC:100.0  FAR:nan | Loss/PSE:0.0914 | Loss/Cls:0.5541 | Loss/Tri:0.6453 | Loss/Total:1.709 | Saved
+2025-03-21 21:25:13,437 [INFO] Step 400 | NCrop: AUC@PR:47.97  AUC@ROC:74.78  ACC:100.0  FAR:nan | Loss/PSE:0.1145 | Loss/Cls:0.4951 | Loss/Tri:0.5991 | Loss/Total:1.691 | Saved
+2025-03-21 21:25:32,772 [INFO] Step 500 | NCrop: AUC@PR:45.7  AUC@ROC:72.61  ACC:100.0  FAR:nan | Loss/PSE:0.1224 | Loss/Cls:0.4691 | Loss/Tri:0.5756 | Loss/Total:1.682 | 
+2025-03-21 21:25:54,263 [INFO] Step 600 | NCrop: AUC@PR:46.19  AUC@ROC:75.76  ACC:100.0  FAR:nan | Loss/PSE:0.1358 | Loss/Cls:0.4145 | Loss/Tri:0.5214 | Loss/Total:1.661 | Saved
+2025-03-21 21:26:13,536 [INFO] Step 700 | NCrop: AUC@PR:45.35  AUC@ROC:75.65  ACC:100.0  FAR:nan | Loss/PSE:0.1371 | Loss/Cls:0.4043 | Loss/Tri:0.5068 | Loss/Total:1.657 | 
+2025-03-21 21:26:34,063 [INFO] Step 800 | NCrop: AUC@PR:49.29  AUC@ROC:81.85  ACC:100.0  FAR:nan | Loss/PSE:0.1382 | Loss/Cls:0.3997 | Loss/Tri:0.4943 | Loss/Total:1.655 | Saved
+2025-03-21 21:26:54,646 [INFO] Step 900 | NCrop: AUC@PR:49.7  AUC@ROC:82.4  ACC:100.0  FAR:nan | Loss/PSE:0.1373 | Loss/Cls:0.3687 | Loss/Tri:0.4496 | Loss/Total:1.639 | Saved
+2025-03-21 21:27:14,400 [INFO] Step 1000 | NCrop: AUC@PR:50.32  AUC@ROC:83.71  ACC:100.0  FAR:nan | Loss/PSE:0.1398 | Loss/Cls:0.37 | Loss/Tri:0.4444 | Loss/Total:1.641 | Saved
+2025-03-21 21:27:35,883 [INFO] Step 1100 | NCrop: AUC@PR:50.69  AUC@ROC:82.5  ACC:100.0  FAR:nan | Loss/PSE:0.1377 | Loss/Cls:0.3331 | Loss/Tri:0.4062 | Loss/Total:1.622 | 
+2025-03-21 21:27:55,393 [INFO] Step 1200 | NCrop: AUC@PR:53.18  AUC@ROC:87.72  ACC:100.0  FAR:nan | Loss/PSE:0.1404 | Loss/Cls:0.3393 | Loss/Tri:0.3977 | Loss/Total:1.626 | Saved
+2025-03-21 21:28:14,773 [INFO] Step 1300 | NCrop: AUC@PR:54.7  AUC@ROC:88.31  ACC:100.0  FAR:nan | Loss/PSE:0.1374 | Loss/Cls:0.338 | Loss/Tri:0.3896 | Loss/Total:1.624 | Saved
+2025-03-21 21:28:36,493 [INFO] Step 1400 | NCrop: AUC@PR:54.0  AUC@ROC:88.47  ACC:100.0  FAR:nan | Loss/PSE:0.1335 | Loss/Cls:0.3096 | Loss/Tri:0.3544 | Loss/Total:1.608 | Saved
+2025-03-21 21:28:55,848 [INFO] Step 1500 | NCrop: AUC@PR:55.93  AUC@ROC:90.05  ACC:100.0  FAR:nan | Loss/PSE:0.1373 | Loss/Cls:0.3158 | Loss/Tri:0.3538 | Loss/Total:1.613 | Saved
+2025-03-21 21:29:16,024 [INFO] Step 1600 | NCrop: AUC@PR:59.43  AUC@ROC:91.3  ACC:100.0  FAR:nan | Loss/PSE:0.1367 | Loss/Cls:0.3094 | Loss/Tri:0.3458 | Loss/Total:1.609 | Saved
+2025-03-21 21:29:36,230 [INFO] Step 1700 | NCrop: AUC@PR:55.61  AUC@ROC:90.39  ACC:100.0  FAR:nan | Loss/PSE:0.1377 | Loss/Cls:0.2904 | Loss/Tri:0.3199 | Loss/Total:1.6 | 
+2025-03-21 21:29:55,205 [INFO] Step 1800 | NCrop: AUC@PR:58.23  AUC@ROC:90.54  ACC:100.0  FAR:nan | Loss/PSE:0.137 | Loss/Cls:0.2866 | Loss/Tri:0.3153 | Loss/Total:1.598 | 
+2025-03-21 21:30:16,038 [INFO] Step 1900 | NCrop: AUC@PR:54.23  AUC@ROC:87.32  ACC:100.0  FAR:nan | Loss/PSE:0.1296 | Loss/Cls:0.27 | Loss/Tri:0.3012 | Loss/Total:1.586 | 
+2025-03-21 21:30:35,875 [INFO] Step 2000 | NCrop: AUC@PR:55.48  AUC@ROC:90.32  ACC:100.0  FAR:nan | Loss/PSE:0.1343 | Loss/Cls:0.2625 | Loss/Tri:0.2949 | Loss/Total:1.585 | 
+2025-03-21 21:30:55,366 [INFO] Step 2100 | NCrop: AUC@PR:58.99  AUC@ROC:91.08  ACC:100.0  FAR:nan | Loss/PSE:0.1344 | Loss/Cls:0.2617 | Loss/Tri:0.2911 | Loss/Total:1.584 | 
+2025-03-21 21:31:17,758 [INFO] Step 2200 | NCrop: AUC@PR:58.3  AUC@ROC:92.19  ACC:100.0  FAR:nan | Loss/PSE:0.1272 | Loss/Cls:0.2463 | Loss/Tri:0.2817 | Loss/Total:1.573 | Saved
+2025-03-21 21:31:37,630 [INFO] Step 2300 | NCrop: AUC@PR:59.12  AUC@ROC:91.13  ACC:100.0  FAR:nan | Loss/PSE:0.1295 | Loss/Cls:0.2414 | Loss/Tri:0.279 | Loss/Total:1.572 | 
+2025-03-21 21:31:59,262 [INFO] Step 2400 | NCrop: AUC@PR:58.32  AUC@ROC:92.04  ACC:100.0  FAR:nan | Loss/PSE:0.1313 | Loss/Cls:0.2408 | Loss/Tri:0.2786 | Loss/Total:1.572 | 
+2025-03-21 21:32:20,393 [INFO] Step 2500 | NCrop: AUC@PR:58.94  AUC@ROC:90.89  ACC:100.0  FAR:nan | Loss/PSE:0.1304 | Loss/Cls:0.226 | Loss/Tri:0.2704 | Loss/Total:1.565 | 
+2025-03-21 21:32:40,435 [INFO] Step 2600 | NCrop: AUC@PR:59.96  AUC@ROC:92.13  ACC:100.0  FAR:nan | Loss/PSE:0.1309 | Loss/Cls:0.2311 | Loss/Tri:0.2682 | Loss/Total:1.567 | 
+2025-03-21 21:33:02,399 [INFO] Step 2700 | NCrop: AUC@PR:61.6  AUC@ROC:92.49  ACC:100.0  FAR:nan | Loss/PSE:0.1319 | Loss/Cls:0.2274 | Loss/Tri:0.2672 | Loss/Total:1.566 | Saved
+2025-03-21 21:33:23,692 [INFO] Step 2800 | NCrop: AUC@PR:60.67  AUC@ROC:92.73  ACC:100.0  FAR:nan | Loss/PSE:0.1301 | Loss/Cls:0.2154 | Loss/Tri:0.2608 | Loss/Total:1.559 | Saved
+2025-03-21 21:33:43,431 [INFO] Step 2900 | NCrop: AUC@PR:58.34  AUC@ROC:92.15  ACC:100.0  FAR:nan | Loss/PSE:0.1312 | Loss/Cls:0.2169 | Loss/Tri:0.257 | Loss/Total:1.56 | 
+2025-03-21 21:34:06,319 [INFO] Step 3000 | NCrop: AUC@PR:59.97  AUC@ROC:91.72  ACC:100.0  FAR:nan | Loss/PSE:0.1311 | Loss/Cls:0.2128 | Loss/Tri:0.2596 | Loss/Total:1.558 | 
+2025-03-21 21:34:27,071 [INFO] Step 3100 | NCrop: AUC@PR:52.61  AUC@ROC:89.62  ACC:100.0  FAR:nan | Loss/PSE:0.1294 | Loss/Cls:0.2075 | Loss/Tri:0.2521 | Loss/Total:1.555 | 
+2025-03-21 21:34:49,064 [INFO] Step 3200 | NCrop: AUC@PR:60.02  AUC@ROC:91.44  ACC:100.0  FAR:nan | Loss/PSE:0.1304 | Loss/Cls:0.2032 | Loss/Tri:0.2491 | Loss/Total:1.553 | 
+2025-03-21 21:35:10,115 [INFO] Step 3300 | NCrop: AUC@PR:57.96  AUC@ROC:90.45  ACC:100.0  FAR:nan | Loss/PSE:0.1319 | Loss/Cls:0.1933 | Loss/Tri:0.2462 | Loss/Total:1.549 | 
+2025-03-21 21:35:29,894 [INFO] Step 3400 | NCrop: AUC@PR:58.7  AUC@ROC:90.17  ACC:100.0  FAR:nan | Loss/PSE:0.1308 | Loss/Cls:0.1931 | Loss/Tri:0.244 | Loss/Total:1.548 | 
+2025-03-21 21:35:51,253 [INFO] Step 3500 | NCrop: AUC@PR:57.46  AUC@ROC:90.16  ACC:100.0  FAR:nan | Loss/PSE:0.13 | Loss/Cls:0.1913 | Loss/Tri:0.2411 | Loss/Total:1.547 | 
+2025-03-21 21:36:12,325 [INFO] Step 3600 | NCrop: AUC@PR:55.77  AUC@ROC:89.66  ACC:100.0  FAR:nan | Loss/PSE:0.1286 | Loss/Cls:0.1805 | Loss/Tri:0.2426 | Loss/Total:1.541 | 
+2025-03-21 21:36:31,995 [INFO] Step 3700 | NCrop: AUC@PR:58.46  AUC@ROC:89.42  ACC:100.0  FAR:nan | Loss/PSE:0.1292 | Loss/Cls:0.1806 | Loss/Tri:0.2382 | Loss/Total:1.541 | 
+2025-03-21 21:36:55,069 [INFO] Step 3800 | NCrop: AUC@PR:59.0  AUC@ROC:90.52  ACC:100.0  FAR:nan | Loss/PSE:0.1245 | Loss/Cls:0.1643 | Loss/Tri:0.2267 | Loss/Total:1.531 | 
+2025-03-21 21:37:14,554 [INFO] Step 3900 | NCrop: AUC@PR:58.9  AUC@ROC:90.05  ACC:100.0  FAR:nan | Loss/PSE:0.1279 | Loss/Cls:0.1672 | Loss/Tri:0.2362 | Loss/Total:1.534 | 
+2025-03-21 21:37:35,753 [INFO] Step 4000 | NCrop: AUC@PR:53.76  AUC@ROC:86.95  ACC:100.0  FAR:nan | Loss/PSE:0.1279 | Loss/Cls:0.1665 | Loss/Tri:0.2314 | Loss/Total:1.534 | 
+2025-03-21 21:37:56,516 [INFO] Step 4100 | NCrop: AUC@PR:57.69  AUC@ROC:87.73  ACC:100.0  FAR:nan | Loss/PSE:0.1245 | Loss/Cls:0.1619 | Loss/Tri:0.2317 | Loss/Total:1.53 | 
+2025-03-21 21:38:15,884 [INFO] Step 4200 | NCrop: AUC@PR:54.63  AUC@ROC:86.05  ACC:100.0  FAR:nan | Loss/PSE:0.128 | Loss/Cls:0.1581 | Loss/Tri:0.2244 | Loss/Total:1.529 | 
+2025-03-21 21:38:36,866 [INFO] Step 4300 | NCrop: AUC@PR:59.22  AUC@ROC:90.46  ACC:100.0  FAR:nan | Loss/PSE:0.1268 | Loss/Cls:0.157 | Loss/Tri:0.2255 | Loss/Total:1.528 | 
+2025-03-21 21:38:57,845 [INFO] Step 4400 | NCrop: AUC@PR:54.78  AUC@ROC:84.26  ACC:100.0  FAR:nan | Loss/PSE:0.1246 | Loss/Cls:0.1521 | Loss/Tri:0.2285 | Loss/Total:1.525 | 
+2025-03-21 21:39:17,465 [INFO] Step 4500 | NCrop: AUC@PR:54.11  AUC@ROC:86.19  ACC:100.0  FAR:nan | Loss/PSE:0.1248 | Loss/Cls:0.151 | Loss/Tri:0.2196 | Loss/Total:1.524 | 
+2025-03-21 21:39:39,581 [INFO] Step 4600 | NCrop: AUC@PR:55.36  AUC@ROC:87.13  ACC:100.0  FAR:nan | Loss/PSE:0.1228 | Loss/Cls:0.1586 | Loss/Tri:0.2359 | Loss/Total:1.527 | 
+2025-03-21 21:39:59,180 [INFO] Step 4700 | NCrop: AUC@PR:54.58  AUC@ROC:88.37  ACC:100.0  FAR:nan | Loss/PSE:0.1241 | Loss/Cls:0.146 | Loss/Tri:0.2111 | Loss/Total:1.521 | 
+2025-03-21 21:40:20,479 [INFO] Step 4800 | NCrop: AUC@PR:57.75  AUC@ROC:88.37  ACC:100.0  FAR:nan | Loss/PSE:0.1245 | Loss/Cls:0.1457 | Loss/Tri:0.2183 | Loss/Total:1.521 | 
+2025-03-21 21:40:41,488 [INFO] Step 4900 | NCrop: AUC@PR:54.99  AUC@ROC:85.09  ACC:100.0  FAR:nan | Loss/PSE:0.1224 | Loss/Cls:0.1376 | Loss/Tri:0.2078 | Loss/Total:1.516 | 
+2025-03-21 21:41:01,081 [INFO] Step 5000 | NCrop: AUC@PR:53.74  AUC@ROC:85.3  ACC:100.0  FAR:nan | Loss/PSE:0.1218 | Loss/Cls:0.1415 | Loss/Tri:0.2159 | Loss/Total:1.518 | 
+2025-03-21 21:41:01,082 [INFO] classification report for ncrop
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.20      0.33      8962
+         1.0       0.22      1.00      0.37      2078
+
+    accuracy                           0.35     11040
+   macro avg       0.61      0.60      0.35     11040
+weighted avg       0.85      0.35      0.34     11040
+
+2025-03-21 21:41:01,082 [INFO] classification video level report for ncrop
+              precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00         5
+
+    accuracy                           1.00         5
+   macro avg       1.00      1.00      1.00         5
+weighted avg       1.00      1.00      1.00         5
+
