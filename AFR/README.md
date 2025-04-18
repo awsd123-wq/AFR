@@ -1,13 +1,13 @@
-# CMSIL
-This is an official PyTorch Implementation of **"CLIP-Driven Multi-Scale Instance Learning for Weakly Supervised Video Anomaly Detection"** in **ICME 2024.**  
+# AFR
+ 
 
 ## Training
 
 ### Setup
 
-**Please download the extracted I3D features for XD-Violence and UCF-Crime dataset from links below:**
+**Please download the extracted I3D features for XD-Violence and UCF-Crime dataset from links below:请从以下链接下载XD-Violence和UCF-Crime数据集的I3D特征：**
 
-> [**XD-Violence I3D onedrive**](https://cqueducn0-my.sharepoint.com/:f:/g/personal/zbqian_cqu_edu_cn/EqnWl_Nm3h1Crjnq24wusEgB04Kvabbs_8eqMKgDHXieBA?e=x89K5f)
+> [**XD-Violence I3D onedrive   XD-Violence I3D驱动**](https://cqueducn0-my.sharepoint.com/:f:/g/personal/zbqian_cqu_edu_cn/EqnWl_Nm3h1Crjnq24wusEgB04Kvabbs_8eqMKgDHXieBA?e=x89K5f)
 
 > [**UCF-Crime I3D onedrive**](https://cqueducn0-my.sharepoint.com/:f:/g/personal/zbqian_cqu_edu_cn/EqnWl_Nm3h1Crjnq24wusEgB04Kvabbs_8eqMKgDHXieBA?e=x89K5f)
 
